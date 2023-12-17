@@ -109,3 +109,31 @@ body {
 		}
 	}
 }
+
+.main-btn {
+	width: 100%;
+	padding: 2.4rem;
+	background-color: var(--colors-black-100);
+	color: var(--colors-white-100);
+	line-height: 1;
+	border-radius: 1.6rem;
+	transition: color 0.3s ease-in-out;
+
+	&:hover {
+		color: var(--colors-white-50);
+	}
+
+	&:disabled {
+		opacity: 0.6;
+		cursor: auto;
+	}
+
+	@include laptop {
+		padding: 2rem;
+		font-size: 1.6rem;
+	}
+
+	@include tablet-s {
+		padding: 1.4rem 2.4rem;
+	}
+}

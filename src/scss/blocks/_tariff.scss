@@ -271,29 +271,8 @@
 	}
 
 	&__btn {
-		width: 100%;
-		padding: 2.4rem;
-		background-color: var(--colors-black-100);
-		color: var(--colors-white-100);
-		line-height: 1;
-		border-radius: 1.6rem;
-
-		@include laptop {
-			padding: 2rem;
-			font-size: 1.6rem;
-		}
-
 		@include tablet-l {
 			margin-top: auto;
-		}
-
-		@include tablet-s {
-			padding: 1.4rem 2.4rem;
-		}
-
-		&:disabled {
-			opacity: 0.6;
-			cursor: auto;
 		}
 	}
 
