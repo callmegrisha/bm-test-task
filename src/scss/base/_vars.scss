@@ -1,0 +1,16 @@
+:root {
+	--colors-black-100: #0e0f11;
+	--colors-gold: #e0b330;
+	--colors-white-100: #fff;
+	--colors-grey-50: #c3c8cf;
+	--colors-grey-100: #8f959b;
+	--colors-card-bg: #f3f7fb;
+	--colors-red-20: rgba(240, 87, 77, 0.20);
+	--colors-red-100: #f24c41;
+
+	--font-family: "SF UI Display", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+	--gradients-circle-grey: linear-gradient(#fff, #fff) padding-box, linear-gradient(#f3f7fb, #f3f7fb1a) border-box;
+	--gradients-circle-gold: linear-gradient(#fff, #fff) padding-box, linear-gradient(#f5Ce5b, #fbee8800) border-box;
+	--gradients-best-gold: linear-gradient(180deg, #fff289 0%, #d2a41d 100%), #fff;
+}

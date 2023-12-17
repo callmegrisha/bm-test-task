@@ -1,0 +1,76 @@
+<section class="rates">
+	<div class="rates__container container">
+		<div class="rates__top">
+			<span class="rates__subtitle">выберите лучший</span>
+			<h1 class="rates__title title title--h1">Актуальные тарифы</h1>
+		</div>
+		<ul class="rates__list list-reset">
+			@@loop('tariff.html', [
+				{
+					additionalClass: 'tariff--free',
+					isInstallmentPayment: false,
+					isFree: true,
+					isBest: false,
+					title: 'Консультация',
+					description: 'Основные вопросы и&nbsp;направления',
+					price: 'Бесплатно',
+					terms: 'В&nbsp;любое время',
+					list: [
+						{ text: 'В&nbsp;любое удобное время' },
+						{ text: 'Расскажем о&nbsp;всех нюансах процедуры' },
+						{ text: 'Предложим варианты решения вашей проблемы' },
+						{ text: 'Подготовим рекомендаци' },
+					]
+				},
+				{
+					additionalClass: 'tariff--best',
+					isInstallmentPayment: false,
+					isFree: false,
+					isBest: true,
+					title: 'Базовый тариф',
+					description: 'От&nbsp;любого банка без процентов и&nbsp;переплат',
+					price: '65&nbsp;000&nbsp;₽',
+					terms: 'Единоразовый платеж',
+					tooltipId: 'bestTooltip',
+					guarantee: 'Для Вашего спокойствия мы&nbsp;гарантируем возврат оплаты в&nbsp;случае отсутствия списания долгов после процедуры.',
+					list: [
+						{ text: 'Сбор всех необходимых документов' },
+						{ text: 'Сбор всех необходимых документов' },
+						{ text: 'Взаимодействие с&nbsp;финансовым управляющим' },
+						{ text: 'Контроль процедуры реализац. имущества' },
+						{ text: 'Поддержка и&nbsp;сопровождение клиента на&nbsp;всех этапах банкротства' },
+					]
+				},
+				{
+					additionalClass: 'tariff--installment',
+					isInstallmentPayment: true,
+					isFree: false,
+					isBest: false,
+					title: 'Рассрочка',
+					description: 'От&nbsp;любого банка без процентов и&nbsp;переплат',
+					price: '3880&nbsp;₽&nbsp;/ мес.',
+					terms: 'На&nbsp;24&nbsp;месяца',
+					tooltipId: 'installmentTooltip',
+					guarantee: 'Для Вашего спокойствия мы&nbsp;гарантируем возврат оплаты в&nbsp;случае отсутствия списания долгов после процедуры.',
+					list: [
+						{
+							text: 'Удобные варианты рассрочки',
+							banks: [
+								{ url: './img/bank-1.png', alt: 'Банк 1'},
+								{ url: './img/bank-1.png', alt: 'Банк 1'},
+								{ url: './img/bank-1.png', alt: 'Банк 1'},
+							],
+							bank1: { url: './img/bank-1.png', alt: 'Банк 1'},
+							bank2: { url: './img/bank-2.png', alt: 'Банк 2'},
+							bank3: { url: './img/bank-3.png', alt: 'Банк 3'},
+						},
+						{ text: 'Комфортные условия оплаты' },
+						{ text: 'Фиксированная сумма' },
+						{ text: 'Гарантия возврата средств' },
+						{ text: 'Остальное, что и&nbsp;в&nbsp;базовом тарифе' },
+					]
+				},
+			])
+		</ul>
+	</div>
+</section>

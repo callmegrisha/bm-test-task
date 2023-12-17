@@ -1,0 +1,12 @@
+/* Base */
+@import "./base/normalize";
+@import "./base/mixins";
+@import "./base/vars";
+@import "./base/fonts";
+@import "./base/base";
+@import "./base/containers";
+
+@import "./blocks/rates";
+@import "./blocks/tariff";
+@import "./blocks/tariff-tooltip";
+@import "./blocks/tariff-time";

@@ -1,0 +1,6 @@
+@import "./mixins";
+
+@include font-face("SF UI Display", 700, "../fonts/sf-ui-display-bold");
+@include font-face("SF UI Display", 600, "../fonts/sf-ui-display-semibold");
+@include font-face("SF UI Display", 500, "../fonts/sf-ui-display-medium");
+@include font-face("SF UI Display", 300, "../fonts/sf-ui-display-light");

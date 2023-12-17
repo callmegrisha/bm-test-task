@@ -1,0 +1,27 @@
+.tariff-time {
+	padding: 0.6rem 1.2rem 0.6rem 2.8rem;
+	background-color: var(--colors-red-20);
+	color: var(--colors-red-100);
+	@include flex-center;
+	background-image: url("../img/clock.svg");
+	background-repeat: no-repeat;
+	background-size: 1.6rem;
+	background-position: 9% 50%;
+	border-radius: 1.6rem;
+
+	@include tablet-s {
+		background-size: 1.1rem;
+		background-position: 12% 50%;
+	}
+
+	&__item {
+		font-size: 1.4rem;
+		font-weight: 600;
+		line-height: 2rem;
+		
+		@include tablet-s {
+			font-size: 1.2rem;
+			line-height: 1.4rem;
+		}
+	}
+}

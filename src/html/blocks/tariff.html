@@ -1,0 +1,46 @@
+<li class="rates__item">
+	<article class="tariff @@additionalClass">
+		<div class="tariff__top">
+			<div class="tariff__icon" aria-hidden="true"></div>
+			<h2 class="tariff__title title title--h4">@@title</h2>
+			<p class="tariff__desc">@@description</p>
+		</div>
+		<div class="tariff__middle">
+			<div class="tariff__payment">
+				<span class="tariff__price title title--h3">@@price</span>
+				<p class="tariff__terms">@@terms</p>
+				<button class="tariff__btn btn-reset" type="button">Выбрать</button>
+			</div>
+			@@if (!isFree) {
+				<div class="tariff__guarantee" aria-label="Гарантия списания, блок">
+					<div class="tariff__tooltip tariff-tooltip">
+						<button class="tariff-tooltip__btn btn-reset" type="button" aria-label="Кнопка для отображения подсказки"></button>
+						<div class="tariff-tooltip__content" role="tooltip" id="@@tooltipId">@@guarantee</div>
+					</div>
+				</div>
+			}
+		</div>
+		@@if (list.length > 0) {
+			<ul class="tariff__list list-reset">
+				@@for (let i = 0; i < list.length; i++) {
+					@@include('./rates-list.html', `+(JSON.stringify(list[i]))+`)
+				}
+			</ul>
+		}
+		@@if (isInstallmentPayment) {
+			<div class="tariff__count tariff-time">
+				<div class="tariff-time__item tariff-time__hours">
+					<div class="tariff-time__val">00</div>
+				</div>
+				<div class="tariff-time__separator">:</div>
+				<div class="tariff-time__item tariff-time__minutes">
+					<div class="tariff-time__val">00</div>
+				</div>
+				<div class="tariff-time__separator">:</div>
+				<div class="tariff-time__item tariff-time__seconds">
+					<div class="tariff-time__val">00</div>
+				</div>
+			</div>
+		}
+	</article>
+</li>
