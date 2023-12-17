@@ -11,6 +11,10 @@
 		padding: 2.4rem 1.2rem;
 	}
 
+	@include tablet-s {
+		padding: 2.4rem;
+	}
+
 	@include tablet-l {
 		padding: 1.2rem 1.2rem 1.2rem 2.4rem;
 		display: grid;
@@ -41,6 +45,10 @@
 
 		@include laptop {
 			padding: 2rem 0.8rem;
+		}
+
+		@include tablet-s {
+			padding: 2.4rem;
 		}
 
 		&::before {
